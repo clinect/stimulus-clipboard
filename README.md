@@ -39,22 +39,24 @@ application.register("clipboard", Clipboard)
 ### selectCopyable
 
 ```html
-<div data-controller="clipboard">
-    <input
-        data-action="focus->clipboard#selectCopyable"
-        data-clipboard-target="copyable"/>
-    <button data-action="click->clipboard#copy"/>
-</div>
+<input
+    data-controller="clipboard"
+    data-action="focus->clipboard#selectCopyable" />
 ```
 
 ## Targets
 
 ### copyable
 
+If `copyable` isn't specified `this.element` is used.
+
 ```html
-<input
-    data-controller="clipboard"
-    data-action="click->clipboard#copy clipboard:copied->tooltip#show" />
+<div data-controller="clipboard">
+    <input
+        data-action="focus->clipboard#selectCopyable"
+        data-clipboard-target="copyable"/>
+    <button data-action="click->clipboard#copy"/>
+</div>
 ```
 
 ## Events

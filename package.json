@@ -1,6 +1,6 @@
 {
   "name": "@johnfreeman/stimulus-clipboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A stimulus controller to add copy-to-clipboard functionality",
   "main": "./src/clipboard-controller.js",
   "repository": {
