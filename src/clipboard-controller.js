@@ -7,8 +7,7 @@ export default class extends Controller {
         this.selectCopyable()
 
         if (document.execCommand("copy")) {
-            const event = new CustomEvent(`${this.identifier}:copied`)
-            event.target?.dispatchEvent(event)
+            event.target?.dispatchEvent(new CustomEvent(`${this.identifier}:copied`))
         }
     }
 
