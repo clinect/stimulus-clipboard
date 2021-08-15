@@ -5,12 +5,12 @@ A stimulus controller for copy-to-clipboard functionality.
 ## Installation
 
 ```shell
-npm install stimulus-clipboard
+npm install @johnfreeman/stimulus-clipboard 
 ```
 
 ```javascript
 import { Application } from "stimulus"
-import Clipboard from "stimulus-clipboard"
+import Clipboard from "@johnfreeman/stimulus-clipboard "
 
 const application = Application.start()
 application.register("clipboard", Clipboard)
