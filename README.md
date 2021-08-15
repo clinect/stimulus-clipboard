@@ -1,6 +1,6 @@
 # Stimulus Clipboard
 
-A [Stimulus](https://github.com/hotwired/stimulus) controller for copy-to-clipboard functionality. Unlike other takes on this, this one tries to get out of your way by dispatching a `copied` event when text is copied to the clipboard.
+A [Stimulus](https://github.com/hotwired/stimulus) controller for copy-to-clipboard functionality. Unlike other takes on this, this one tries to get out of your way by dispatching a `copied` event when text is copied to the clipboard. This opens the door for calling an action on another controller.
 
 * [Installation](#installation)
 * [Actions](#actions)
