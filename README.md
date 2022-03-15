@@ -20,7 +20,7 @@ npm install @johnnyfreeman/stimulus-clipboard
 
 ```javascript
 import { Application } from "stimulus"
-import Clipboard from "@johnnyfreeman/stimulus-clipboard "
+import Clipboard from "@johnnyfreeman/stimulus-clipboard"
 
 const application = Application.start()
 application.register("clipboard", Clipboard)
