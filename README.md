@@ -63,10 +63,20 @@ If `copyable` isn't specified `this.element` is used.
 
 ### copied
 
+The `clipboard:copied` event can be acted upon just like any other event. It also includes the text that was copied with the event detail: `event.detail.copied`.
+
 ```html
 <input
     data-controller="clipboard"
-    data-action="click->clipboard#copy clipboard:copied->tooltip#show" />
+    data-action="click->clipboard#copy clipboard:copied->tooltip#showCopied" />
+```
+
+Or you could extend the clipboard controller with a method to show some sort of confirmation to the user.
+
+```html
+<input
+    data-controller="clipboard"
+    data-action="click->clipboard#copy clipboard:copied->clipboard#" />
 ```
 
 ## Special Thanks
