@@ -15,12 +15,12 @@ A [Stimulus](https://github.com/hotwired/stimulus) controller for copy-to-clipbo
 ## Installation
 
 ```shell
-npm install @johnnyfreeman/stimulus-clipboard 
+npm install @clinect/stimulus-clipboard 
 ```
 
 ```javascript
 import { Application } from "stimulus"
-import Clipboard from "@johnnyfreeman/stimulus-clipboard"
+import Clipboard from "@clinect/stimulus-clipboard"
 
 const application = Application.start()
 application.register("clipboard", Clipboard)
